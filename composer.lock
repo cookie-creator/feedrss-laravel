@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1abc7822bd9f28e9a62986817bf04f76",
+    "content-hash": "ff3202aeecdb15e58b21354ef192e90f",
     "packages": [
         {
             "name": "brick/math",
@@ -436,6 +436,40 @@
                 }
             ],
             "time": "2022-05-28T22:19:18+00:00"
+        },
+        {
+            "name": "feedrss/feeding",
+            "version": "dev-0-feedingrss",
+            "dist": {
+                "type": "path",
+                "url": "packages/feedrss/feeding",
+                "reference": "7d7558f328b21b77c0030692b984b37e01ca5927"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "FeedrssFeeding\\FeedrssFeedingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FeedrssFeeding\\": "src/"
+                }
+            },
+            "license": [
+                "proprietary"
+            ],
+            "authors": [
+                {
+                    "name": "me",
+                    "email": "send@here.com"
+                }
+            ],
+            "transport-options": {
+                "relative": true
+            }
         },
         {
             "name": "fruitcake/php-cors",
